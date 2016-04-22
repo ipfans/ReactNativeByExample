@@ -35,7 +35,7 @@ let styles = StyleSheet.create({
 	loading: {
 		flex: 1,
 		alignItems: 'center',
-		justufyContent: 'center'
+		justifyContent: 'center'
 	},
 	loadingText: {
 		marginTop: 10,

@@ -19,7 +19,7 @@ export default function reddit(state = initialState, action) {
 				loading: action.loading,
 				isLoadMore: action.isLoadMore
 			});
-			case types.RECEVIE_REDDIT_LIST:
+		case types.RECEVIE_REDDIT_LIST:
 			return Object.assign({}, state, {
 				isRefreshing: false,
 				loading: state.redditList[action.typeId] === undefined,
@@ -27,6 +27,8 @@ export default function reddit(state = initialState, action) {
 				redditList: state.isLoadMore ? loadMore(state, action): combine(state, action),
 				isLoadMore: false
 			});
+		default:
+			return state;
 	}
 }
 

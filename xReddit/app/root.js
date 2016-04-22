@@ -1,10 +1,10 @@
 import React from 'react-native';
 import {Provider} from 'react-redux';
-import configStore from './store/config';
+import configureStore from './store/config';
 
 import App from './containers/app';
 
-const sotre = configStore();
+const store = configureStore();
 
 class Root extends React.Component {
 	render() {
