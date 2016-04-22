@@ -1,0 +1,4 @@
+'use strict';
+
+export const FETCH_REDDIT_LIST = 'FETCH_REDDIT_LIST';
+export const RECEVIE_REDDIT_LIST = 'RECEVIE_REDDIT_LIST';
